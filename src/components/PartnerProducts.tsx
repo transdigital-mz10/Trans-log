@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { partnerOfferings, type Product, type PartnerOffering } from '../data/partners';
 
@@ -137,10 +135,9 @@ export default function PartnerProducts() {
                   <div className="aspect-w-16 aspect-h-10 bg-gray-50 overflow-hidden">
                     <div className="relative w-full h-48 bg-gray-100 overflow-hidden">
                     {product.image ? (
-                      <Image
+                      <img
                         src={product.image}
                         alt={product.name}
-                        fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
@@ -175,20 +172,20 @@ export default function PartnerProducts() {
                       </ul>
                     </div>
                     
-                    <Link 
+                    <a 
                       href={`/partners/${partner.id}#${product.id}`}
                       className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm mt-4 group-hover:underline"
                     >
                       View details
                       <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
+                    </a>
                   </div>
                 </motion.div>
               ))}
             </div>
             
             <div className="mt-8 text-center">
-              <Link 
+              <a 
                 href={partner.url} 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -196,7 +193,7 @@ export default function PartnerProducts() {
               >
                 View all {partner.name} products
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              </a>
             </div>
           </div>
         ))}

@@ -1,10 +1,8 @@
-import { StrictMode } from 'react';
+import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Add debug logs
-console.log('main.tsx: Starting application...');
 
 // Error boundary for the root component
 class RootErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean}> {
@@ -60,13 +58,9 @@ class RootErrorBoundary extends React.Component<{children: React.ReactNode}, {ha
 }
 
 // Initialize i18n with error handling
-let i18nInitialized = false;
-
 try {
-  console.log('main.tsx: Initializing i18n...');
   import('./lib/i18n').then(() => {
     console.log('main.tsx: i18n initialized successfully');
-    i18nInitialized = true;
   }).catch(error => {
     console.error('main.tsx: Failed to initialize i18n:', error);
   });

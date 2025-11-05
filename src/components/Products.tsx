@@ -1,6 +1,5 @@
 import { Building2, Cpu, Monitor, Package, Shield, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Link from 'next/link';
 
 export default function Products() {
   const { t } = useTranslation();
@@ -50,13 +49,13 @@ export default function Products() {
             </div>
 
             <div className="mt-6 flex justify-center">
-              <Link
+              <a
                 href="/products/computing-hardware"
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
               >
                 {t('products.cta.viewAll')}
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -87,13 +86,13 @@ export default function Products() {
                     <span>{t('products.rugged.points.3')}</span>
                   </li>
                 </ul>
-                <Link
+                <a
                   href="/products/rugged-hardware"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
                 >
                   {t('products.cta.view')}
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -113,13 +112,13 @@ export default function Products() {
               </h4>
               <p className="text-slate-600 leading-relaxed mb-6">{t('products.banking.section.body')}</p>
               <div className="flex flex-wrap gap-4">
-                <Link
+                <a
                   href="/products/banking-solutions"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
                 >
                   {t('products.cta.view')}
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </a>
                 <span className="px-4 py-3 text-sm text-slate-600 bg-slate-50 rounded-lg">
                   {t('products.banking.featuring')}
                 </span>
