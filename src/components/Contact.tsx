@@ -12,26 +12,31 @@ export default function Contact() {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+  const [submitStatus, setSubmitStatus] = useState<string | null>(null);
 
-  const handleSubmit = async (e: FormEvent) => {
+  // Fetch the API URL from environment variables
+  const emailSenderApiUrl = import.meta.env.VITE_EMAIL_SENDER_API_URL;
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setSubmitStatus('success');
+    try { 
+      setIsSubmitting(true);
+      const response = await fetch(emailSenderApiUrl, {
+        method: 'POST',
+        headers: {    
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok){
+        const data = await response.json();
+        setSubmitStatus(data.status);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    }
     setIsSubmitting(false);
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      message: '',
-    });
-
-    setTimeout(() => setSubmitStatus(null), 5000);
   };
 
   return (
