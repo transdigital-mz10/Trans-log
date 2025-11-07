@@ -49,13 +49,13 @@ export default function Products() {
             </div>
 
             <div className="mt-6 flex justify-center">
-              <a
+              {/* <a
                 href="/products/computing-hardware"
                 className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
               >
                 {t('products.cta.viewAll')}
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </a> */}
             </div>
           </div>
 
