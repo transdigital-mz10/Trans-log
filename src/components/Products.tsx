@@ -87,7 +87,9 @@ export default function Products() {
                   </li>
                 </ul>
                 <a
-                  href="/products/rugged-hardware"
+                  href="http://ruggedsa.co.za/?srsltid=AfmBOoo4I3xLeNcgeW8W69rM5a3Bisg2AgL20rNmLQZ6tlih18-DQzW7"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
                 >
                   {t('products.cta.view')}
@@ -113,7 +115,9 @@ export default function Products() {
               <p className="text-slate-600 leading-relaxed mb-6">{t('products.banking.section.body')}</p>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="/products/banking-solutions"
+                  href="https://avansa.co.za/?srsltid=AfmBOoqR0gZIwPNqO-_85gzjEqTXCMxk3hWRText7U2np17_sx-s4U29"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-900 transition-all hover:shadow-lg"
                 >
                   {t('products.cta.view')}

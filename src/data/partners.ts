@@ -36,32 +36,73 @@ export const partnerOfferings: PartnerOffering[] = [
     products: [
       {
         id: 'rugged-phone-x1',
-        name: 'Rugged Phone X1',
+        name: 'Rugged Phone X11',
         description: 'Ultra-durable smartphone built to withstand extreme conditions',
         features: [
-          'IP68 water and dust resistance',
-          'Shockproof design',
-          'Long battery life (5000mAh)',
-          '5G connectivity'
+          '5.45″ LCD Screen',
+          'Android 12',
+          '4GB RAM',
+          '64GB ROM',
+          '16MP Rear Camera',
+          '8,150mAh Battery',
+          'G25 Helio Processor',
+          'Dual-Sim + TF Card',
+          'IP68 & IP69K',
+          'Push To Talk (PTT)',
+          'Face Unlock',
+          'NFC & Glove Touch'
         ],
-        image: '/images/rugged-phone.jpg',
-        url: 'https://ruggedsa.co.za/products/rugged-phone-x1'
+        image: 'https://ruggedsa.co.za/wp-content/uploads/2022/10/My-project-1.png',
+        url: 'https://ruggedsa.co.za/product/ulefone-armor-x11-pro-4g-rugged-smartphone/'
       },
+      
       {
         id: 'field-tablet-t3',
-        name: 'Field Tablet T3',
+        name: 'Blackview Active 7 | 11″ Rugged Tablet | Android 15',
         description: 'Rugged tablet for field operations and inspections',
         features: [
-          '10.1" sunlight-readable display',
-          'Glove and wet touch support',
-          'Barcode/RFID reader',
-          'All-day battery life'
+          "11″ FDH+ Screen",
+          'Android 15',
+          '8GB RAM',
+          '128GB ROM',
+          '16MP Rear Camera',
+          '20MP Night Vision',
+          '10,000mAh Battery',
+          'G81 MediaTek Helio Processor', 
+          'Dual-Sim + TF Card',
+          'IP68 & IP69',
+          '45W Fast Charging',
+          'Glove Touch',
+          'NFC',
+          'Docking station Included',
         ],
-        image: '/images/field-tablet.jpg',
-        url: 'https://ruggedsa.co.za/products/field-tablet-t3'
+        
+        image: 'https://ruggedsa.co.za/wp-content/uploads/2025/10/Blackview-Active-7.png',
+        url: 'https://ruggedsa.co.za/product/blackview-active-7-11%e2%80%b3-rugged-tablet/'
+      },
+
+      {
+        id: 'laptop-n15a',
+        name: 'ONERugged N15A 15.6″ 12th Gen Intel Core i7 Windows AI Rugged Notebook',
+        description: 'Rugged tablet for field operations and inspections',
+        features: [
+          "15.6″ HD Screen",
+          'Windows 11',
+          '16GB RAM',
+          '256GB ROM',
+          'Industrial I/O Ports',
+          'Intel Core i7-1255U Processor',
+          '1300mah Battery  (Built-in)',
+          '4850mah (Removable)',
+          'IP65 & MIL-STD-810H'
+        ],
+        image: 'https://ruggedsa.co.za/wp-content/uploads/2025/01/OneRugged-N14M-Rugged-Laptop.png',
+        url: 'https://ruggedsa.co.za/product/blackview-active-7-11%e2%80%b3-rugged-tablet/'
       }
     ]
   },
+
+  // Avansa
   {
     id: 'avansa',
     name: 'Avansa',
@@ -84,11 +125,27 @@ export const partnerOfferings: PartnerOffering[] = [
           'Batch counting and add functions',
           'Large LCD display'
         ],
-        image: '/images/money-counter.jpg',
-        url: 'https://avansa.co.za/products/money-counter-mc200'
-      }
+        image: 'https://avansa.co.za/cdn/shop/files/avansa-compactcount-2050-africas-smallest-money-counter-9106714.jpg?v=1758780887&width=1440',
+        url: 'https://avansa.co.za/collections/money-counters/products/avansa-compactcount-2050-money-counter#product-modal'
+      },
+      {
+        id: 'currency-counter-c350',
+        name: 'Avansa PayMount 3000 Universal Card Machine Stand - PED Mount',
+        description: 'High-speed currency counting machine with counterfeit detection',
+        features: [
+          'Universal fit for most payment terminals.',
+          'Robust, durable construction for busy use.',
+          'Integrated cable management, clutter-free counter.',
+          'Adjustable tilt and swivel for customer ease.',
+          '30 Day Satisfaction Guarantee*'
+        ],
+        image: 'https://avansa.co.za/cdn/shop/files/avansa-paymount-3000-universal-card-machine-stand-ped-mount-9640772.png?v=1758780978&width=1080',
+        url: 'https://avansa.co.za/collections/pos-machines/products/avansa-universal-card-machine-stand#product-modal'
+      },
     ]
   },
+
+  // Vanstone
   {
     id: 'vanstone',
     name: 'Vanstone',

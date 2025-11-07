@@ -98,7 +98,7 @@ export default function PartnerProducts() {
                       <img 
                         src={partner.logo} 
                         alt={partner.name}
-                        className="h-full w-auto object-contain"
+                        className="h-full w-auto center-object"
                         onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                           // Fallback to a placeholder if image fails to load
                           const target = e.target as HTMLImageElement;
@@ -138,8 +138,7 @@ export default function PartnerProducts() {
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                         onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
                           // Fallback to a placeholder if image fails to load
                           const target = e.target as HTMLImageElement;
