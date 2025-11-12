@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 import { partnerOfferings, type Product, type PartnerOffering } from '../data/partners';
 
 const fadeInUp = {
@@ -171,20 +170,20 @@ export default function PartnerProducts() {
                       </ul>
                     </div>
                     
-                    <a 
+                    {/* <a 
                       href={`/partners/${partner.id}#${product.id}`}
                       className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium text-sm mt-4 group-hover:underline"
                     >
                       View details
                       <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
+                    </a> */}
                   </div>
                 </motion.div>
               ))}
             </div>
             
             <div className="mt-8 text-center">
-              <a 
+              {/* <a 
                 href={partner.url} 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -192,7 +191,7 @@ export default function PartnerProducts() {
               >
                 View all {partner.name} products
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              </a> */}
             </div>
           </div>
         ))}

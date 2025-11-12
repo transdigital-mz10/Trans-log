@@ -1,4 +1,4 @@
-import { Building2, Cpu, Monitor, Package, Shield, ArrowRight } from 'lucide-react';
+import { Building2, Cpu, Monitor, Package, Shield} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export default function Products() {
@@ -86,7 +86,7 @@ export default function Products() {
                     <span>{t('products.rugged.points.3')}</span>
                   </li>
                 </ul>
-                <a
+                {/* <a
                   href="http://ruggedsa.co.za/?srsltid=AfmBOoo4I3xLeNcgeW8W69rM5a3Bisg2AgL20rNmLQZ6tlih18-DQzW7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,7 +94,7 @@ export default function Products() {
                 >
                   {t('products.cta.view')}
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function Products() {
               </h4>
               <p className="text-slate-600 leading-relaxed mb-6">{t('products.banking.section.body')}</p>
               <div className="flex flex-wrap gap-4">
-                <a
+                {/* <a
                   href="https://avansa.co.za/?srsltid=AfmBOoqR0gZIwPNqO-_85gzjEqTXCMxk3hWRText7U2np17_sx-s4U29"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -122,7 +122,7 @@ export default function Products() {
                 >
                   {t('products.cta.view')}
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </a> */}
                 <span className="px-4 py-3 text-sm text-slate-600 bg-slate-50 rounded-lg">
                   {t('products.banking.featuring')}
                 </span>

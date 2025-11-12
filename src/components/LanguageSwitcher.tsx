@@ -16,7 +16,9 @@ export function LanguageSwitcher() {
     await i18n.changeLanguage(next);
     try {
       localStorage.setItem('i18nextLng', next);
-    } catch {}
+    } catch {
+      // Ignore localStorage errors
+    }
   }, []);
 
   return (
