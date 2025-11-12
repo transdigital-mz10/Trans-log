@@ -92,7 +92,7 @@ export default function PartnerProducts() {
               <div className="h-px bg-gray-200 flex-1"></div>
               <div className="px-6">
                 <div className="flex items-center space-x-4">
-                  <div className="h-12 w-auto flex items-center justify-center">
+                  <div className="h-auto w-auto flex items-center justify-center">
                     {partner.logo ? (
                       <img 
                         src={partner.logo} 
@@ -113,7 +113,7 @@ export default function PartnerProducts() {
                       </div>
                     )}
                   </div>
-                  <h3 className="text-2xl font-bold">{partner.name}</h3>
+                  
                 </div>
               </div>
               <div className="h-px bg-gray-200 flex-1"></div>
@@ -132,7 +132,7 @@ export default function PartnerProducts() {
                   whileHover={{ y: -5 }}
                 >
                   <div className="aspect-w-16 aspect-h-10 bg-gray-50 overflow-hidden">
-                    <div className="relative w-full h-48 bg-gray-100 overflow-hidden">
+                    <div className="relative w-full h-full bg-gray-100 overflow-hidden">
                     {product.image ? (
                       <img
                         src={product.image}

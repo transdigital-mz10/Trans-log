@@ -19,7 +19,7 @@ export type PartnerOffering = {
 
 import ruggedLogo from '../assets/partners/ruggedsa.png';
 import avansaLogo from '../assets/partners/avansa.png';
-import vanstoneLogo from '../assets/partners/vanstone.svg';
+import vanstoneLogo from '../assets/partners/vanstone.png';
 
 export const partnerOfferings: PartnerOffering[] = [
   {
@@ -159,16 +159,44 @@ export const partnerOfferings: PartnerOffering[] = [
     ],
     products: [
       {
-        id: 'smart-pos-v10',
-        name: 'Smart POS V10',
-        description: 'All-in-one Android POS terminal for retail and hospitality',
+        id: 'a99',
+        name: 'A99',
+        description: '',
         features: [
-          '10.1" touchscreen display',
-          'Multiple payment options',
-          'Thermal printer and barcode scanner',
-          '4G/Wi-Fi/Bluetooth connectivity'
+          'OS android Based on Android 12.0',
+          'Quad-core Cortex-A53, 2.0GHz+Secure Processor',
+          'Battery: 7.6V/3000mAh',
+          '4G (Supports 3G&2G) Bluetooth 5.0 Wi-Fi 2.4GHz&5GHz'
         ],
-        image: '/images/smart-pos.jpg',
+        image: 'https://www.vanstone.com.cn/en/uploads/20230713/0fdcfc45ffbc39851944bae1d7651525.png',
+        url: 'https://www.vanstone.com.cn/en/products/smart-pos-v10'
+      },
+      {
+        id: 'a60',
+        name: 'A60',
+        description: '',
+        features: [
+          'OS Vandroid Based on Android 10.0',
+          'Quad-core Cortex-A53, 1.5GHz+Secure Processor',
+          'Battery: 3.6V/4000mAh',
+          '4G (Supports 3G&2G) Bluetooth 5.0 Wi-Fi 2.4GHz&5GHz'
+        ],
+        image: 'https://www.vanstone.com.cn/en/uploads/20250522/255d5ddcce2d176dad2d59bba4a93085.png',
+        url: 'https://www.vanstone.com.cn/en/products/smart-pos-v10'
+      },
+      {
+        id: 'v77',
+        name: 'V77',
+        description: '',
+        features: [
+          'OS VanLin',
+          'Cortex-A5, 500MHz+Secure Processor',
+          'Battery: 3.6V/4000mAh',
+          '4G (Supports 3G&2G) Bluetooth 5.0 Wi-Fi 2.4GHz&5GHz',
+          'QR Code Payments',
+          'Card Payments'
+        ],
+        image: 'https://www.vanstone.com.cn/en/uploads/20241212/4c033dcffc36a989241535a22b1ff8c6.png',
         url: 'https://www.vanstone.com.cn/en/products/smart-pos-v10'
       }
     ]
